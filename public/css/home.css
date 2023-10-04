@@ -125,6 +125,19 @@
             animation: showcase 0.5s ease-in-out;
         }
 
+        .feature img:not(:hover) {
+            animation: showcase-out 0.5s ease-in-out;
+        }
+
+        @keyframes showcase-out {
+            from {
+                max-width: 20rem;
+            }
+            to {
+                max-width: 15rem;
+            }
+        }
+
         @keyframes showcase {
             from{
                 max-width: 15rem;
