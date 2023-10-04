@@ -15,16 +15,20 @@
         header {
             background-color: #333;
             color: #fff;
-            padding: 20px 0;
+            padding: 1rem 0;
         }
 
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1200px;
+            max-width: 100%;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 1rem;
+        }
+
+        .hotel-logo{
+            height: 2rem;
         }
 
         .logo img {
@@ -68,7 +72,7 @@
             background-image: url('hero-image.jpg');
             background-size: cover;
             text-align: center;
-            padding: 100px 0;
+            padding: 5rem 0;
             color: #fff;
         }
 
@@ -104,7 +108,7 @@
             display: flex;
             background-size: cover;
             text-align: center;
-            padding: 100px 0;
+            padding: 2rem 9rem;
             color: #fff;
         }
 
@@ -118,6 +122,15 @@
 
         .feature img:hover{
             max-width: 20rem;
+            animation: showcase 0.5s ease-in-out;
+        }
+
+        @keyframes showcase {
+            from{
+                max-width: 15rem;
+            }to{
+                max-width: 20rem;
+            }
         }
 
         /* Footer with Background Image */
