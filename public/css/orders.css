@@ -1,3 +1,7 @@
+body{
+    background: rgb(44, 42, 42);
+}
+
 /* Add styles for the container, room list, and room details here */
 .container {
     display: flex;
@@ -44,6 +48,11 @@
     height: auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.1); /* Scale up the image on hover */
 }
 
 .product-title {
