@@ -189,3 +189,21 @@
             vertical-align: middle;
             height: 1.5rem;
         }
+
+
+        /* -----------------------Mobile View ------------------------- */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* Hide navigation links on mobile */
+            }
+        
+            .login a {
+                margin-top: 10px; /* Add margin to the login button on mobile */
+            }
+
+            .features {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }

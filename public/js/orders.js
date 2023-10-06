@@ -76,3 +76,38 @@ document.addEventListener("DOMContentLoaded", function () {
     showSlide(currentIndex);
     updateButtons();
 });
+
+// Order Options
+const selectElement = document.querySelectorAll(".selectNumber");
+
+
+selectElement.forEach((select) => {
+    for (let i = 1; i <= 10; i++) {
+        const option = document.createElement("option");
+        option.value = i;
+        option.textContent = i;
+        select.appendChild(option);
+    }
+});
+
+
+//Room details mobile devices
+
+const bringProductDetails = document.querySelectorAll('.product-button');
+const showProduct = document.querySelector('.room-details');
+const backButton = document.querySelector('#back-button');
+
+bringProductDetails.forEach(button => {
+    button.addEventListener('click', () => {
+        // Show the .room-details and cover the whole body
+        showProduct.style.display = 'block';
+        // document.body.style.overflow = 'hidden'; // Disable scrolling
+
+        // Add click event listener to the back button
+        backButton.addEventListener('click', () => {
+            // Hide the .room-details and restore scrolling
+            showProduct.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Enable scrolling
+        });
+    });
+});

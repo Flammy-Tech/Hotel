@@ -1,3 +1,8 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap');
+*{
+    font-family: Roboto, arial, helvetica, sans-serif;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -242,3 +247,68 @@ li.nav-item a {
 .icon-color {
     color: #483d05;
   }
+
+
+  /* Product Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse; /* Remove space between table cells */
+  }
+
+  /* Style the table header cells */
+  th {
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    text-align: left; /* Align text to the left within header cells */
+  }
+
+  /* Style the table data cells */
+  td {
+    padding: 10px;
+    border: 1px solid #ddd; /* Add a light gray border to cells */
+  }
+
+
+
+
+  /* ------------------------------------------Mobile View -------------------------------------- */
+  /* Mobile View Adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack elements vertically on small screens */
+    }
+
+    .room-list,
+    .room-details {
+        padding: 10px; /* Reduce padding for smaller screens */
+         /*
+    }
+
+    .room-list {
+        flex-basis: auto; /* Allow it to take full width on small screens */
+    }
+
+    .product-card {
+        width: 100%; /* Full width for product cards on small screens */
+        margin: 10px 0; /* Adjust margin for mobile */
+    }
+
+    .product-button {
+        font-size: 0.9rem; /* Slightly smaller font size on mobile */
+    }
+    .room-details{
+        display:none;
+    }
+
+    .room-services li {
+        margin-right: 1rem; /* Reduce margin for room services on mobile */
+    }
+
+    nav ul{
+        justify-content: center;
+        padding:0;
+    }
+
+    /* Add additional mobile-specific styles as needed */
+}

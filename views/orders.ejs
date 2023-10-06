@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/orders.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" href="./img/tokio-hotel.svg" type="img/svg+xml">
     <script src="./js/orders.js" defer></script>
     <title>Hotel Room Reservation</title>
 </head>
@@ -26,6 +27,7 @@
     </nav>
     <div class="container">
         <div class="room-list">
+            
             <div class="product-card">
                 <img src="./img/interior2.jpg" alt="Product Name">
                 <h2 class="product-title">Product Name</h2>
@@ -88,10 +90,11 @@
             </div>
 
             <!-- Room details go here -->
+            <div id="back-button"><i class="fas fa-arrow-alt-circle-left"></i></div>
             <div class="room-description">
                 <div class="carousel">
                     <div class="slide">
-                        <img src="./img/beach2.jpg" alt="Image 1">
+                        <img src="./img/luxurious-room.jpg" alt="Image 1">
                     </div>
                     <div class="slide">
                         <img src="./img/interior.jpg" alt="Image 2">
@@ -174,8 +177,44 @@
                     </ul>
                 </div>
 
-                <div class="product-table">
-                    
+                <div class="table-container">
+                    <table border="1">
+                        <thead>
+                          <tr>
+                            <!-- Define the table header cells with orange background -->
+                            <th>Room Types</th>
+                            <th>Sleeps</th>
+                            <th>Price</th>
+                            <th>Your Choices</th>
+                            <th>Select Rooms</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- Add table rows with data here -->
+                          <tr>
+                            <td><i class="fas fa-bed"></i> Queen Bed</td>
+                            <td> <i class="fas fa-user"></i> </td>
+                            <td>$100</td>
+                            <td>Choice 1</td>
+                            <td>
+                                <select class="selectNumber" name="selectRoom">
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Double Room</td>
+                            <td> <i class="fas fa-users"></i> </td>
+                            <td>$150</td>
+                            <td>Choice 2</td>
+                            <td>
+                                <select class="selectNumber" name="selectRoom">
+                                </select>
+                            </td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+
                 </div>
             </div>            
 
