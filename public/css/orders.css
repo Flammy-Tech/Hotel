@@ -1,7 +1,8 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #444654;
+    background-color: #FAFAFA;
+    
 }
 
 /* Add styles for the container, room list, and room details here */
@@ -95,7 +96,7 @@ nav {
     padding: 10px 0;
 }
 
-ul {
+nav ul {
     list-style-type: none;
     text-align: center;
 }
@@ -210,3 +211,34 @@ li.nav-item a {
 #prevBtn {
     display: none;
 }
+
+.product-dp{
+    display: flex;
+    align-items: center;
+}
+
+.product-dp i{
+    margin-right: 1rem;
+}
+
+/* .room-services{
+    display: flex;
+} */
+
+.room-services ul{
+    margin:0;
+    padding:1rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.room-services li{
+    margin-right: 2rem;
+}
+
+
+/* Font awesome icon color */
+.icon-color {
+    color: #483d05;
+  }
