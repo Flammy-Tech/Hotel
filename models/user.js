@@ -5,7 +5,10 @@ const userSchema = mongoose.Schema({
     password: {
         type: String
     },
-    hair: String
+    identification: {
+        type: String,
+        required: true
+    }
 });
 
 module.exports = mongoose.model('user', userSchema);

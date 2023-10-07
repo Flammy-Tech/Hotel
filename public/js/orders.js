@@ -93,21 +93,39 @@ selectElement.forEach((select) => {
 
 //Room details mobile devices
 
-const bringProductDetails = document.querySelectorAll('.product-button');
-const showProduct = document.querySelector('.room-details');
-const backButton = document.querySelector('#back-button');
 
-bringProductDetails.forEach(button => {
-    button.addEventListener('click', () => {
-        // Show the .room-details and cover the whole body
-        showProduct.style.display = 'block';
-        // document.body.style.overflow = 'hidden'; // Disable scrolling
+// Get references to the buttons and the popup container
+const buyNowButton = document.getElementById('buyNowButton');
+const popupContainer = document.getElementById('popupContainer');
+const closePopupButton = document.getElementById('closePopupButton');
+const closePopupButtonClass = document.querySelectorAll('.close-popup-button');
 
-        // Add click event listener to the back button
-        backButton.addEventListener('click', () => {
-            // Hide the .room-details and restore scrolling
-            showProduct.style.display = 'none';
-            document.body.style.overflow = 'auto'; // Enable scrolling
-        });
-    });
-});
+// Event listener for the Buy Now button
+// buyNowButton.addEventListener('click', function() {
+//     // Show the popup
+//     popupContainer.style.display = 'block';
+// });
+
+// Event listener for the Close button
+// closePopupButton.addEventListener('click', function() {
+//     // Hide the popup
+//     popupContainer.style.display = 'none';
+// });
+
+
+// Event listener for the Buy Now button
+// buyNowButton.forEach(
+//     addEventListener('click', function() {
+//         // Show the popup
+//         popupContainer.style.display = 'block';
+//     })
+// );
+
+
+// Event listener for the Close button
+// closePopupButton.forEach(
+//     addEventListener('click', function() {
+//         // Hide the popup
+//         popupContainer.style.display = 'none';
+//     })
+// );

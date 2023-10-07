@@ -271,7 +271,6 @@ li.nav-item a {
 
 
 
-
   /* ------------------------------------------Mobile View -------------------------------------- */
   /* Mobile View Adjustments */
 @media (max-width: 768px) {
@@ -309,6 +308,99 @@ li.nav-item a {
         justify-content: center;
         padding:0;
     }
+
+    .navbar-strip {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .date-input {
+        margin-bottom: 10px;
+    }
+
+    .search-button {
+        margin-top: 10px;
+    }
+
+    .room-description {
+        padding: 10px; /* Add padding for mobile spacing */
+    }
+
+    .carousel {
+        /* Adjust carousel styles for mobile */
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .carousel .slide {
+        /* Adjust slide styles for mobile */
+        width: 100%;
+    }
+
+    .room-services {
+        /* Adjust room services styles for mobile */
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .room-services ul {
+        padding-left: 0;
+    }
+
+    .room-services li {
+        margin-bottom: 10px;
+    }
+
+    .table-container {
+        /* Adjust table styles for mobile */
+        overflow-x: auto;
+        margin-top: 20px;
+    }
+
+    table {
+        /* Adjust table styles for mobile */
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        /* Adjust table cell styles for mobile */
+        padding: 10px;
+        text-align: left;
+    }
+
+    /* Popup */
+    /* CSS for the popup container */
+    .popup-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+        overflow: auto;
+    }
+
+    /* CSS for the popup content */
+    .room-popup {
+        background-color: #fff;
+        margin: 10% auto;
+        padding: 20px;
+        max-width: 90%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    /* CSS for the close button */
+    .close-popup-button {
+        display: block;
+        margin-top: 10px;
+        margin-left: auto;
+    }
+
+
 
     /* Add additional mobile-specific styles as needed */
 }
