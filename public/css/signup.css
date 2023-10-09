@@ -1,0 +1,80 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/front.jpg') no-repeat fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    
+}
+
+.login-container {
+    max-width: 400px;
+    background-color: #0c0c0cc5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding-right: 50px;
+}
+
+.center-container {
+    max-width: 400px;
+    text-align: center;
+}
+.form-content {
+    width: 100%;
+    max-width: 300px; /* Adjust this width as needed */
+    margin-top: 20px;
+}
+
+.input-container {
+    text-align: left;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+}
+
+.login-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
