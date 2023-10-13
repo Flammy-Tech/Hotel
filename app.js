@@ -15,9 +15,11 @@ app.set('view engine', 'ejs');
 const homeRouter = require('./routes/home');
 const ordersRouter = require('./routes/orders');
 const signupRouter = require('./routes/signup');
+const reservationRouters = require('./routes/reservations');
 app.use('/', homeRouter);
 app.use('/orders',ordersRouter);
 app.use('/signup', signupRouter)
+app.use('/reservations', reservationRouters);
 
 app.listen(port, ()=>{
     console.log(`App listening on port ${port}`)

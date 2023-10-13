@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reservations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" href="./img/tokio-hotel.svg" type="img/svg+xml">
+    <script src="./js/reservations.js" defer></script>
+    <title>Hotel Room Reservation</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="nav-item">Home</li>
+            <li class="nav-item">Services</li>
+            <li class="nav-item">Info</li>
+            <li class="nav-item">
+                <div class="account">
+                    <img src="./img/profile.png" alt="profile image"/>
+                    <h3>Welcome Natalia</h3>
+                    
+                </div>
+            </li>
+        </ul>
+       
+    </nav>
+    <div class="container">
+        <div class="room-list">
+            
+           
+
+            <div class="product-card">
+                <img src="./img/interior2.jpg" alt="Product Name">
+                <h2 class="product-title">Product Name</h2>
+                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris in nunc bibendum tristique.</p>
+                <p class="product-price">$99.99</p>
+                <button class="product-button" id="buyNowButton">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="./img/interior2.jpg" alt="Product Name">
+                <h2 class="product-title">Product Name</h2>
+                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris in nunc bibendum tristique.</p>
+                <p class="product-price">$99.99</p>
+                <button class="product-button" id="buyNowButton">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="./img/interior2.jpg" alt="Product Name">
+                <h2 class="product-title">Product Name</h2>
+                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris in nunc bibendum tristique.</p>
+                <p class="product-price">$99.99</p>
+                <button class="product-button" id="buyNowButton">Buy Now</button>
+            </div>
+        </div>
+
+
+        <div class="room-details">
+            <div class="navbar-strip">
+                <div class="date-input">
+                    <label for="check-in">Check-In:</label>
+                    <input type="date" id="check-in" name="check-in">
+                </div>
+                <div class="date-input">
+                    <label for="check-out">Check-Out:</label>
+                    <input type="date" id="check-out" name="check-out">
+                </div>
+                <button class="search-button">Search</button>
+            </div>
+
+            <!-- Room details go here -->
+            <div class="room-description">
+                <div class="carousel">
+                    <div class="slide">
+                        <img src="./img/luxurious-room.jpg" alt="Image 1">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/interior.jpg" alt="Image 2">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/suite.jpg" alt="Image 3">
+                    </div>
+                </div>
+                <button id="prevBtn">Previous</button>
+                <button id="nextBtn">Next</button>
+
+
+                <div class="room-services">
+                    <ul>
+                        <li>
+                            <div class="product-dp icon-color">
+                                <i class="fas fa-shower"></i>
+                                <h4>Hot shower</h4>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="product-dp icon-color">
+                                <i class="fas fa-hands-wash"></i>
+                                <h4>Laundry</h4>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="product-dp icon-color">
+                                <i class="fas fa-shield"></i>
+                                <h4>Security</h4>
+
+                            </div>
+                        </li>
+
+                        
+                        <li>
+                            <div class="product-dp icon-color">
+                                <i class="fas fa-gamepad"></i>
+                                <h4>Games</h4>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="product-dp icon-color">
+                                <i class="fas fa-tv"></i>
+                                <h4>Lounge/Tv</h4>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="product-dp icon-color">
+                                <i class="fas fa-tshirt"></i>
+                                <h4>Ironing Service</h4>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="product-dp icon-color">
+                                <i class="fas fa-volume-mute"></i>
+                                <h4>Sound Proof</h4>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="product-dp icon-color">
+                                <i class="fas fa-dumbbell"></i>
+                                <h4>Fitness Center</h4>
+
+                            </div>
+                        </li>
+                    
+                    </ul>
+                </div>
+
+                <div class="table-container">
+                    <table border="1">
+                        <thead>
+                          <tr>
+                            <!-- Define the table header cells with orange background -->
+                            <th>Room Types</th>
+                            <th>Sleeps</th>
+                            <th>Price</th>
+                            <th>Your Choices</th>
+                            <th>Select Rooms</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- Add table rows with data here -->
+                          <tr>
+                            <td><i class="fas fa-bed"></i> Queen Bed</td>
+                            <td> <i class="fas fa-user"></i> </td>
+                            <td>$100</td>
+                            <td>Choice 1</td>
+                            <td>
+                                <select class="selectNumber" name="selectRoom">
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Double Room</td>
+                            <td> <i class="fas fa-users"></i> </td>
+                            <td>$150</td>
+                            <td>Choice 2</td>
+                            <td>
+                                <select class="selectNumber" name="selectRoom">
+                                </select>
+                            </td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+
+                </div>
+            </div>            
+           
+            </div>
+
+                <!-- Create a popup container -->
+                <div id="popupContainer" class="popup-container">
+                    <!-- Content of the popup -->
+                    <div class="room-popup">
+                        <!-- The room description code you provided goes here -->                    
+
+                    </div>
+                    
+                    <!-- Close button for the popup -->
+                    <!-- <button id="closePopupButton" class="close-popup-button">Close</button> -->
+                </div>
+
+       
+          
+        </div>
+    </div>
+</body>
+</html>
+
