@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/front.jpg') no-repeat fixed;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/interior2.jpg') no-repeat fixed;
     background-size: cover;
     display: flex;
     justify-content: center; /* Center horizontally */
@@ -62,6 +62,7 @@ label {
     display: block;
     text-align: left;
     font-weight: bold;
+    color: #fff;
 }
 
 .login-button {
