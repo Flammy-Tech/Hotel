@@ -7,24 +7,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="icon" href="./img/tokio-hotel.svg" type="img/svg+xml">
     <script src="./js/services.js" defer></script>
-    <title>Hotel Services</title>
+    <title>Hotel Room Reservation</title>
 </head>
 <body>
     <nav>
         <ul>
-            <li class="nav-item">Home</li>
-            <li class="nav-item">Services</li>
+            <li class="nav-item"><a href="/">Home</a></li>
             <li class="nav-item">Info</li>
-            <li class="nav-item">
-                <div class="account">
-                    <img src="./img/profile.png" alt="profile image"/>
-                    <h3>Welcome Natalia</h3>
-                    
-                </div>
-            </li>
+           
         </ul>
        
     </nav>
+
+    <main>
+        <div class="card-collection">
+            <div class="product-card">
+                <img src="./img/interior2.jpg" alt="Product Name">
+                <h2 class="product-title">Luxury Rooms</h2>
+                <p class="product-description"> Your Home away from Home where luxury meets comfort </p>
+                <button class="product-button" id="buyNowButton"> <a href="/orders">Check</a> </button>
+            </div>
+
+            <div class="product-card">
+                <img src="./img/interior2.jpg" alt="Product Name">
+                <h2 class="product-title">Confrence Rooms</h2>
+                <p class="product-description"> Make the deal with confidence in a place where Business meets Business </p>
+                <button class="product-button" id="buyNowButton"> <a href="/reservation">Check</a> </button>
+            </div>
+
+            <div class="product-card">
+                <img src="./img/spa.jpg" alt="Product Name">
+                <h2 class="product-title"> SPA </h2>
+                <p class="product-description"> Come Let us take care of you </p>
+                <button class="product-button" id="buyNowButton">  <a href="/reservation">Check</a> </button>
+            </div>
+        </div>
+    </main>
 
 </body>
 </html>
