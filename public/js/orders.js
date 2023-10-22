@@ -35,6 +35,47 @@
 // updateRoomList();
 
 
+
+//Room details mobile devices
+
+
+// Get references to the buttons and the popup container
+// const buyNowButton = document.getElementById('buyNowButton');
+// const popupContainer = document.getElementById('popupContainer');
+// const closePopupButton = document.getElementById('closePopupButton');
+// const closePopupButtonClass = document.querySelectorAll('.close-popup-button');
+
+// //Event listener for the Buy Now button
+// buyNowButton.addEventListener('click', function() {
+//     // Show the popup
+//     popupContainer.style.display = 'block';
+// });
+
+// //Event listener for the Close button
+// closePopupButton.addEventListener('click', function() {
+//     // Hide the popup
+//     popupContainer.style.display = 'none';
+// });
+
+
+// //Event listener for the Buy Now button
+// buyNowButton.forEach(
+//     addEventListener('click', function() {
+//         // Show the popup
+//         popupContainer.style.display = 'block';
+//     })
+// );
+
+
+// //Event listener for the Close button
+// closePopupButton.forEach(
+//     addEventListener('click', function() {
+//         // Hide the popup
+//         popupContainer.style.display = 'none';
+//     })
+// );
+
+
 //Carousell
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -88,44 +129,25 @@ selectElement.forEach((select) => {
         option.textContent = i;
         select.appendChild(option);
     }
+
+
+   // Room-Details Mobile view
+
+const buyNowButton = document.querySelectorAll('#buyNowButton');
+const roomDetails = document.querySelector('.room-details');
+const roomList = document.querySelector('.room-list');
+
+buyNowButton.forEach((show) => {
+    if (window.innerWidth <= 768) { // Use window.innerWidth to check the viewport width
+        show.addEventListener('click', () => {
+            console.log('Clicked');
+            roomList.style.display = 'none';
+            roomDetails.style.display = 'block';
+        });
+    }
 });
 
 
-//Room details mobile devices
+    
+});
 
-
-// Get references to the buttons and the popup container
-const buyNowButton = document.getElementById('buyNowButton');
-const popupContainer = document.getElementById('popupContainer');
-const closePopupButton = document.getElementById('closePopupButton');
-const closePopupButtonClass = document.querySelectorAll('.close-popup-button');
-
-// Event listener for the Buy Now button
-// buyNowButton.addEventListener('click', function() {
-//     // Show the popup
-//     popupContainer.style.display = 'block';
-// });
-
-// Event listener for the Close button
-// closePopupButton.addEventListener('click', function() {
-//     // Hide the popup
-//     popupContainer.style.display = 'none';
-// });
-
-
-// Event listener for the Buy Now button
-// buyNowButton.forEach(
-//     addEventListener('click', function() {
-//         // Show the popup
-//         popupContainer.style.display = 'block';
-//     })
-// );
-
-
-// Event listener for the Close button
-// closePopupButton.forEach(
-//     addEventListener('click', function() {
-//         // Hide the popup
-//         popupContainer.style.display = 'none';
-//     })
-// );
