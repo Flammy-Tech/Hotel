@@ -5,21 +5,15 @@
 
 body{
     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/interior.jpg') no-repeat fixed;
-
     margin: 0;
     padding: 0;
     background-color: #FAFAFA;
     
 }
 
-li,a{
-    list-style: none;
-}
-
-/* Add styles for the container, room list, and room details here */
-.container {
-    display: flex;
-    justify-content: space-between;
+a{
+    color: #000;
+    text-decoration: none;    
 }
 
 
@@ -193,7 +187,6 @@ main{
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    height: 90vh;
 }
 
 .card-collection{
@@ -210,16 +203,6 @@ main{
 @media (max-width: 768px) {
     .container {
         flex-direction: column; /* Stack elements vertically on small screens */
-    }
-
-    .room-list,
-    .room-details {
-        padding: 10px; /* Reduce padding for smaller screens */
-         /*
-    }
-
-    .room-list {
-        flex-basis: auto; /* Allow it to take full width on small screens */
     }
 
     .product-card {
@@ -250,9 +233,7 @@ main{
     }
 
     main{
-        display: flex;
         flex-direction: column;
-        padding: 1rem;
     }
     
     .card-collection{
