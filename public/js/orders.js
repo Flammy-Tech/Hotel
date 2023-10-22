@@ -1,83 +1,3 @@
-// // JavaScript to handle the room reservation functionality
-// const roomList = document.querySelector('.room-list');
-// const roomDetails = document.querySelector('.room-details');
-
-// // Sample room data (you can replace this with your actual data)
-// const rooms = [
-//     { name: 'Room 101', description: 'This is a cozy single room with a view of the garden.' },
-//     { name: 'Room 202', description: 'A spacious double room with a private balcony.' },
-//     { name: 'Room 303', description: 'A luxurious suite with a separate living area.' },
-//     // Add more room data as needed
-// ];
-
-// // Function to update the room list
-// function updateRoomList() {
-//     roomList.innerHTML = '';
-//     rooms.forEach((room, index) => {
-//         const listItem = document.createElement('div');
-//         listItem.classList.add('room-item');
-//         listItem.textContent = room.name;
-//         listItem.addEventListener('click', () => displayRoomDetails(index));
-//         roomList.appendChild(listItem);
-//     });
-// }
-
-// // Function to display room details
-// function displayRoomDetails(index) {
-//     const room = rooms[index];
-//     roomDetails.innerHTML = `
-//         <h2>${room.name}</h2>
-//         <p>${room.description}</p>
-//     `;
-// }
-
-// // Initial setup
-// updateRoomList();
-
-
-
-//Room details mobile devices
-
-
-// Get references to the buttons and the popup container
-// const buyNowButton = document.getElementById('buyNowButton');
-// const popupContainer = document.getElementById('popupContainer');
-// const closePopupButton = document.getElementById('closePopupButton');
-// const closePopupButtonClass = document.querySelectorAll('.close-popup-button');
-
-// //Event listener for the Buy Now button
-// buyNowButton.addEventListener('click', function() {
-//     // Show the popup
-//     popupContainer.style.display = 'block';
-// });
-
-// //Event listener for the Close button
-// closePopupButton.addEventListener('click', function() {
-//     // Hide the popup
-//     popupContainer.style.display = 'none';
-// });
-
-
-// //Event listener for the Buy Now button
-// buyNowButton.forEach(
-//     addEventListener('click', function() {
-//         // Show the popup
-//         popupContainer.style.display = 'block';
-//     })
-// );
-
-
-// //Event listener for the Close button
-// closePopupButton.forEach(
-//     addEventListener('click', function() {
-//         // Hide the popup
-//         popupContainer.style.display = 'none';
-//     })
-// );
-
-
-//Carousell
-
 document.addEventListener("DOMContentLoaded", function () {
     const carousel = document.querySelector(".room-description .carousel");
     const slides = document.querySelectorAll(".room-description .slide");
@@ -145,6 +65,36 @@ buyNowButton.forEach((show) => {
             roomDetails.style.display = 'block';
         });
     }
+});
+
+
+//Room Details
+
+const roomButtons = document.querySelectorAll(".product-button");
+
+roomButtons.forEach(button => {
+    button.addEventListener("click", function () {
+        const roomID = button.getAttribute("data-room");
+        const roomSection = document.getElementById(roomID);
+
+        const room1 = document.getElementById("room1");
+        const room2 = document.getElementById("room2");
+
+        // Hide all room sections
+        roomDetails.querySelectorAll("section").forEach(section => {
+            section.style.display = "none";
+        });
+
+        // Display the selected room section
+        roomSection.style.display = "block";
+
+        // Ensure that only one room is displayed
+        if (roomID === "room1") {
+            room2.style.display = "none";
+        } else if (roomID === "room2") {
+            room1.style.display = "none";
+        }
+    });
 });
 
 

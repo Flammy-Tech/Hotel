@@ -33,7 +33,7 @@
                 <h2 class="product-title">Product Name</h2>
                 <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris in nunc bibendum tristique.</p>
                 <p class="product-price">$99.99</p>
-                <button class="product-button" id="buyNowButton">Buy Now</button>
+                <button class="product-button product-button1"  id="buyNowButton" data-room="room1">Buy Now</button>
             </div>
 
             <div class="product-card">
@@ -41,55 +41,31 @@
                 <h2 class="product-title">Product Name</h2>
                 <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris in nunc bibendum tristique.</p>
                 <p class="product-price">$99.99</p>
-                <button class="product-button" id="buyNowButton">Buy Now</button>
+                <button class="product-button product-button2"  id="buyNowButton" data-room="room2">Buy Now</button>
             </div>
 
-            <div class="product-card">
-                <img src="./img/interior2.jpg" alt="Product Name">
-                <h2 class="product-title">Product Name</h2>
-                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris in nunc bibendum tristique.</p>
-                <p class="product-price">$99.99</p>
-                <button class="product-button" id="buyNowButton">Buy Now</button>
-            </div>
-
-            <div class="product-card">
-                <img src="./img/interior2.jpg" alt="Product Name">
-                <h2 class="product-title">Product Name</h2>
-                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris in nunc bibendum tristique.</p>
-                <p class="product-price">$99.99</p>
-                <button class="product-button" id="buyNowButton">Buy Now</button>
-            </div>
-
-            <div class="product-card">
-                <img src="./img/interior2.jpg" alt="Product Name">
-                <h2 class="product-title">Product Name</h2>
-                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris in nunc bibendum tristique.</p>
-                <p class="product-price">$99.99</p>
-                <button class="product-button" id="buyNowButton">Buy Now</button>
-            </div>
-
-            <div class="product-card">
-                <img src="./img/interior2.jpg" alt="Product Name">
-                <h2 class="product-title">Product Name</h2>
-                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris in nunc bibendum tristique.</p>
-                <p class="product-price">$99.99</p>
-                <button class="product-button" id="buyNowButton">Buy Now</button>
-            </div>
+            
         </div>
 
 
-        <div class="room-details">
+        <section class="room-details" id="room1" style="display: none;">
             <div class="navbar-strip">
+                
+            <form action="/orders" method="post">
                 <div class="date-input">
                     <label for="check-in">Check-In:</label>
-                    <input type="date" id="check-in" name="check-in">
+                    <input type="date" id="check-in" name="checkIn">
                 </div>
                 <div class="date-input">
                     <label for="check-out">Check-Out:</label>
-                    <input type="date" id="check-out" name="check-out">
+                    <input type="date" id="check-out" name="checkOut">
                 </div>
-                <button class="search-button">Search</button>
+                <button type="submit" class="search-button">Calculate</button>
+            </form>
+            
+
             </div>
+
 
             <!-- Room details go here -->
             <div class="room-description">
@@ -219,20 +195,154 @@
                 </div>
             </div>            
            
-            </div>
+        </section>
 
-                <!-- Create a popup container -->
-                <div id="popupContainer" class="popup-container">
-                    <!-- Content of the popup -->
-                    <div class="room-popup">
-                        <!-- The room description code you provided goes here -->                    
-
-                    </div>
+            <section class="room-details" id="room2"  style="display: none;">
+                <div class="navbar-strip">
+                    <form action="/orders" method="post">
+                        <div class="date-input">
+                            <label for="check-in">Check-In:</label>
+                            <input type="date" id="check-in" name="checkIn">
+                        </div>
+                        <div class="date-input">
+                            <label for "check-out">Check-Out:</label>
+                            <input type="date" id="check-out" name="checkOut">
+                        </div>
+                        <button type="submit" class="search-button">Calculate</button>
+                    </form>
                     
-                    <!-- Close button for the popup -->
-                    <!-- <button id="closePopupButton" class="close-popup-button">Close</button> -->
                 </div>
-
+    
+                <!-- Room details go here -->
+                <div class="room-description">
+                    <div class="carousel">
+                        <div class="slide">
+                            <img src="./img/luxurious-room.jpg" alt="Image 1">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/interior.jpg" alt="Image 2">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/suite.jpg" alt="Image 3">
+                        </div>
+                    </div>
+                    <button id="prevBtn">Previous</button>
+                    <button id="nextBtn">Next</button>
+    
+    
+                    <div class="room-services">
+                        <h1>room2</h1>
+                        <ul>
+                            <li>
+                                <div class="product-dp icon-color">
+                                    <i class="fas fa-shower"></i>
+                                    <h4>Hot shower</h4>
+    
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="product-dp icon-color">
+                                    <i class="fas fa-hands-wash"></i>
+                                    <h4>Laundry</h4>
+    
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="product-dp icon-color">
+                                    <i class="fas fa-shield"></i>
+                                    <h4>Security</h4>
+    
+                                </div>
+                            </li>
+    
+                            
+                            <li>
+                                <div class="product-dp icon-color">
+                                    <i class="fas fa-gamepad"></i>
+                                    <h4>Games</h4>
+    
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="product-dp icon-color">
+                                    <i class="fas fa-tv"></i>
+                                    <h4>Lounge/Tv</h4>
+    
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="product-dp icon-color">
+                                    <i class="fas fa-tshirt"></i>
+                                    <h4>Ironing Service</h4>
+    
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="product-dp icon-color">
+                                    <i class="fas fa-volume-mute"></i>
+                                    <h4>Sound Proof</h4>
+    
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="product-dp icon-color">
+                                    <i class="fas fa-dumbbell"></i>
+                                    <h4>Fitness Center</h4>
+    
+                                </div>
+                            </li>
+                        
+                        </ul>
+                    </div>
+    
+                    <div class="table-container">
+                        <table border="1">
+                            <thead>
+                              <tr>
+                                <!-- Define the table header cells with orange background -->
+                                <th>Room Types</th>
+                                <th>Sleeps</th>
+                                <th>Price</th>
+                                <th>Your Choices</th>
+                                <th>Select Rooms</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <!-- Add table rows with data here -->
+                              <tr>
+                                <td><i class="fas fa-bed"></i> Queen Bed</td>
+                                <td> <i class="fas fa-user"></i> </td>
+                                <td>$100</td>
+                                <td>Choice 1</td>
+                                <td>
+                                    <select class="selectNumber" name="selectRoom">
+                                    </select>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Double Room</td>
+                                <td> <i class="fas fa-users"></i> </td>
+                                <td>$150</td>
+                                <td>Choice 2</td>
+                                <td>
+                                    <select class="selectNumber" name="selectRoom">
+                                    </select>
+                                </td>
+                              </tr>
+                              <!-- Add more rows as needed -->
+                            </tbody>
+                          </table>
+    
+                    </div>
+                </div>            
+               
+            </section>
        
           
         </div>
