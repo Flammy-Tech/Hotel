@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/orders.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="icon" href="./img/tokio-hotel.svg" type="img/svg+xml">
     <script src="./js/orders.js" defer></script>
     <title>Hotel Room Reservation</title>
@@ -29,19 +30,19 @@
         <div class="room-list">
             
             <div class="product-card">
-                <img src="./img/interior2.jpg" alt="Product Name">
-                <h2 class="product-title">Product Name</h2>
-                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris in nunc bibendum tristique.</p>
-                <p class="product-price">$99.99</p>
-                <button class="product-button product-button1"  id="buyNowButton" data-room="room1">Buy Now</button>
+                <img src="./img/family-suite.jpg" alt="Luxurious Family Suite">
+                <h2 class="product-title">Luxurious Family Suite</h2>
+                <p class="product-description">Indulge in the opulence of this spacious suite designed for families. Featuring elegant decor and ample amenities for a comfortable stay.</p>
+                <p class="product-price">$499.99</p>
+                <button class="product-button product-button1"  id="buyNowButton" data-room="room1">Reserve Now</button>
             </div>
-
+    
             <div class="product-card">
-                <img src="./img/interior2.jpg" alt="Product Name">
-                <h2 class="product-title">Product Name</h2>
-                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mauris in nunc bibendum tristique.</p>
-                <p class="product-price">$99.99</p>
-                <button class="product-button product-button2"  id="buyNowButton" data-room="room2">Buy Now</button>
+                <img src="./img/romantic-getaway.jpg" alt="Romantic Getaway Suite">
+                <h2 class="product-title">Romantic Getaway Suite</h2>
+                <p class="product-description">Escape to a romantic retreat designed exclusively for couples. Enjoy intimate moments in a charming setting with all the necessary amenities.</p>
+                <p class="product-price">$399.99</p>
+                <button class="product-button product-button2"  id="buyNowButton" data-room="room2">Reserve Now</button>
             </div>
 
             
@@ -69,19 +70,28 @@
 
             <!-- Room details go here -->
             <div class="room-description">
-                <div class="carousel">
-                    <div class="slide">
-                        <img src="./img/luxurious-room.jpg" alt="Image 1">
+                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/luxurious-room.jpg" class="d-block w-100" alt="Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/interior.jpg" class="d-block w-100" alt="Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/suite.jpg" class="d-block w-100" alt="Image 3">
+                        </div>
                     </div>
-                    <div class="slide">
-                        <img src="./img/interior.jpg" alt="Image 2">
-                    </div>
-                    <div class="slide">
-                        <img src="./img/suite.jpg" alt="Image 3">
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button id="prevBtn">Previous</button>
-                <button id="nextBtn">Next</button>
+                
 
 
                 <div class="room-services">
@@ -215,19 +225,28 @@
     
                 <!-- Room details go here -->
                 <div class="room-description">
-                    <div class="carousel">
-                        <div class="slide">
-                            <img src="./img/luxurious-room.jpg" alt="Image 1">
+                    <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/luxurious-room.jpg" class="d-block w-100" alt="Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/interior.jpg" class="d-block w-100" alt="Image 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/suite.jpg" class="d-block w-100" alt="Image 3">
+                            </div>
                         </div>
-                        <div class="slide">
-                            <img src="./img/interior.jpg" alt="Image 2">
-                        </div>
-                        <div class="slide">
-                            <img src="./img/suite.jpg" alt="Image 3">
-                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <button id="prevBtn">Previous</button>
-                    <button id="nextBtn">Next</button>
+                    
     
     
                     <div class="room-services">

@@ -3,6 +3,7 @@ const router = express.Router();
 
 router.route('/')
     .get((req,res)=>{
+        console.log('Reservations Page');
         res.render('reservations')
     }).post((req,res)=>{
 

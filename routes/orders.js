@@ -3,6 +3,7 @@ const router = express.Router();
 
 router.route('/')
     .get((req, res) => {
+        console.log('Room Order Page');
         res.render('orders');
     })
     .post((req, res) => {

@@ -146,14 +146,19 @@ li.nav-item a {
     color: #fff;
     padding: 10px 20px;
     display: flex;
+    flex-direction: row;
     border-radius: 1rem;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
 }
 
+.room-details .navbar-strip form{
+    display: flex;
+}
 /* Style the date inputs */
 .date-input {
     margin-right: 20px;
+    gap: 2;
 }
 
 .date-input label {
@@ -294,6 +299,7 @@ li.nav-item a {
 
     .product-button {
         font-size: 0.9rem; /* Slightly smaller font size on mobile */
+        margin-bottom: 5px;
     }
     .room-details{
         display:none;

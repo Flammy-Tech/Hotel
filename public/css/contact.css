@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+body{
+    background: linear-gradient(to right, #ff5e62, #8440ff); /* Pink-purple gradient */
+
+}
+
+/* Navigation Bar */
+nav {
+    height: 3rem;
+    background-color: #333333;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Other styles remain unchanged */
+ul,
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Section 1 */
+#hero {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex: 1;
+    height: 75vh;
+}
+
+.quote {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Added padding for better visibility */
+    border-radius: 10px; /* Added border-radius for rounded corners */
+}
+
+.inspiring-text {
+    text-align: center;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 2rem;
+    color: #fff; /* Text color set to white */
+}
+
+.inspiring-text span{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333333;
+    font-style: normal;
+}
+
+.hero-img {
+    width: 50%;
+    position: relative;
+}
+
+.hero-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0; 
+    margin-bottom: 0;
+}
+
+/* Section 2 */
+#projects {
+    height: fit-content;
+}
+
+.projects-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projects-card {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(192, 24, 24);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+
+/* Section 3 */
+#salute {
+    height: 20vh;
+    background-color: #3c093caa;
+}
+
+/* Contact Buttons */
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.contacts {
+    margin: 0 10px; /* Adjust margin as needed */
+}
+
+.contacts a img {
+    width: 50px; /* Adjust the size of the GitHub logo as needed */
+    height: 50px;
+    border-radius: 50%; /* Make the logo circular */
+}
