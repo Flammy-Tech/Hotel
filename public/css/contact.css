@@ -8,22 +8,42 @@
 
 body{
     background: linear-gradient(to right, #ff5e62, #8440ff); /* Pink-purple gradient */
+    width: 100vw;
 
 }
 
 /* Navigation Bar */
 nav {
-    height: 3rem;
-    background-color: #333333;
+    width: 100%;
+    background-color: #333;
     color: #fff;
+    padding: 10px 0;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center; /* Center the links horizontally */
-    align-items: center;
-    gap: 2rem;
+    list-style-type: none;
+    text-align: center;
 }
+
+li.nav-item {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+li.nav-item:last-child {
+    margin-right: 0;
+}
+
+li.nav-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li.nav-item a:hover{
+    color: #ff6e40;
+}
+
 
 /* Other styles remain unchanged */
 ul,
@@ -39,7 +59,6 @@ a {
     width: 100%;
     background-color: rgba(0, 0, 0, 0);
     display: flex;
-    flex: 1;
     height: 75vh;
 }
 
@@ -57,8 +76,11 @@ a {
     font-style: italic;
     font-weight: 900;
     font-size: 2rem;
-    color: #fff; /* Text color set to white */
+    background: linear-gradient(to right, #333, #5723b9);
+    -webkit-background-clip: text;
+    color: transparent;
 }
+
 
 .inspiring-text span{
     font-size: 1rem;
@@ -70,6 +92,7 @@ a {
 .hero-img {
     width: 50%;
     position: relative;
+    transition: display 0.3s ease;
 }
 
 .hero-img img {
@@ -96,16 +119,16 @@ a {
 .projects-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .projects-card {
-    width: 300px;
-    height: 300px;
-    background-color: rgb(192, 24, 24);
+    width: 40rem;
+    height: 30rem;
+    background-color: #333;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    margin: 10px;
+    margin: 1rem
 }
 
 /* Section 3 */
@@ -124,10 +147,49 @@ a {
 
 .contacts {
     margin: 0 10px; /* Adjust margin as needed */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .contacts a img {
-    width: 50px; /* Adjust the size of the GitHub logo as needed */
-    height: 50px;
-    border-radius: 50%; /* Make the logo circular */
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
 }
+
+  /* ------------------------------------------Mobile View -------------------------------------- */
+  /* Mobile View Adjustments */
+  @media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    nav{
+        width: 100%;
+    }
+
+    .hero-img{
+        display: none;
+    }
+
+
+    .quote{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background:url('../img/self\ \(Large\).png') no-repeat;
+        transition: transform 0.3s ease;
+        background-size: cover;
+        overflow-x: hidden;
+
+    }
+
+    .inspiring-text{
+        color: #fff;
+        
+    }
+
+    .contacts a img{
+        height: 2rem
+        
+    }
+  }

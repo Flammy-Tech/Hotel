@@ -22,12 +22,14 @@ const signupRouter = require('./routes/signup');
 const reservationRouters = require('./routes/reservations');
 const servicesRouter = require('./routes/services');
 const contactRouter = require('./routes/contact');
+const spaRouter = require('./routes/spa');
 app.use('/', homeRouter);
 app.use('/orders',ordersRouter);
 app.use('/signup', signupRouter)
 app.use('/reservations', reservationRouters);
 app.use('/services', servicesRouter);
 app.use('/contact', contactRouter);
+app.use('/spa', spaRouter);
 
 app.listen(port, ()=>{
     console.log(`App listening on port ${port}`)

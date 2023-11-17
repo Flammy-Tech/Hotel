@@ -1,35 +1,68 @@
-/* style.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/front.jpg') no-repeat fixed;
     background-size: cover;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Full viewport height */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
     
 }
 
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+li.nav-item {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+li.nav-item:last-child {
+    margin-right: 0;
+}
+
+li.nav-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li.nav-item a:hover{
+    color: #ff6e40;
+}
+
+
+
+
+
+
 .login-container {
     max-width: 400px;
-    background-color: #0c0c0cc5;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
     padding-right: 50px;
 }
 
+.login-container form{
+    padding: 2rem;
+
+}
 .center-container {
     max-width: 400px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .form-content {
     width: 100%;
@@ -73,6 +106,10 @@ label {
     cursor: pointer;
     border-radius: 3px;
     font-size: 16px;
+}
+
+label{
+    color:darkorange;
 }
 
 .login-button:hover {

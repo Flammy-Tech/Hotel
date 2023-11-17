@@ -237,6 +237,7 @@ li.nav-item a {
 .room-services ul{
     margin:0;
     padding:1rem;
+    font-size: 1rem;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -244,6 +245,7 @@ li.nav-item a {
 
 .room-services li{
     margin-right: 2rem;
+    font-size: 1rem;
 }
 
 
@@ -319,6 +321,9 @@ li.nav-item a {
         align-items: center;
         text-align: center;
     }
+    .room-details .navbar-strip form{
+        flex-direction: column;
+    }
 
     .date-input {
         margin-bottom: 10px;
@@ -330,6 +335,7 @@ li.nav-item a {
 
     .room-description {
         padding: 10px; /* Add padding for mobile spacing */
+        margin:0;
     }
 
     .carousel {
@@ -371,7 +377,7 @@ li.nav-item a {
 
     th, td {
         /* Adjust table cell styles for mobile */
-        padding: 10px;
+        padding: 5px;
         text-align: left;
     }
 

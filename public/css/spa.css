@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: Roboto, arial, helvetica, sans-serif;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/interior.jpg') no-repeat fixed;
+}
+
+a{
+    text-decoration: none;
+    color:#333;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+li.nav-item {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+li.nav-item:last-child {
+    margin-right: 0;
+}
+
+li.nav-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li.nav-item a:hover{
+    color: #ff6e40;
+}
+
+
+/* SPA CONTAINER */
+.spa-hero{
+    width:100%;
+    color:#FAFAFA;
+}
+
+.spa-hero h1{
+    text-align: center;
+}
+
+.spa-hero h4{
+    text-align: center;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.spa-container{
+    background-color: transparent;
+    border: #3333330a solid 5px;
+    height: fit-content;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.spa-card{
+    height: 20rem;
+    margin: 2rem;
+    width: 20rem;
+    background-color: #ff6e40;
+    transition: transform 0.3s ease;
+    
+}
+
+#full-body-massage-card{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/spa.jpg') no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff7f;
+    padding: 2rem;
+    font-weight: 600;
+}
+
+#dining-card{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/PieceOfCake.png') no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.spa-card:hover{
+    transform: scale(1.1);
+    color:#671d06;
+
+}
+
+
+
+
+
+
+
+  /* ------------------------------------------Mobile View -------------------------------------- */
+  /* Mobile View Adjustments */
+  @media (max-width: 768px) {
+
+    .spa-card{
+        height: 20rem;
+        width: 20rem;
+        margin:2rem 0 2rem 0;
+    }
+  }

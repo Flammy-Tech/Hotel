@@ -7,11 +7,19 @@
     <link rel="stylesheet" href="./css/signup.css"> <!-- Link to the external CSS file -->
 </head>
 <body>
+    <nav>
+        <ul>
+            <li class="nav-item"><a href="/">Home</a></li>
+            <li class="nav-item"><a href="/services">Services</a></li>
+            <li class="nav-item"><a href="/contact">Contact</a></li>
+        </ul>
+       
+    </nav>
     
     <div class="login-container">
         <div class="center-container">
-        <h1>Login to Hotel Management System</h1>
-        <form action="/signup" method="post">
+            <form action="/signup" method="post">
+            <h1>Login to Hotel Management System</h1>
             <div class="input-container">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
